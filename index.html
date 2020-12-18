@@ -29,10 +29,16 @@
       </aside>
     </div>
     <div class="container-properties">
-      <label for="input">Color: </label>
-      <input type="text" value="#4286f4" class="input color" />
-      <label for="input">Ancho de la linea: </label>
-      <input type="text" value="2" class="input lineWidth" />
+      <div class="properties-color">
+        <label for="input">Color: </label>
+        <input type="text" value="#4286f4" class="input color" />
+      </div>
+      <div class="properties-lineWidth">
+        <label for="input">Ancho de la linea: </label>
+        <input type="text" value="2" class="input lineWidth" />
+      </div>
+    </div>
+    <div class="container-button">
       <input
         type="button"
         id="boton1"
@@ -42,6 +48,7 @@
       />
     </div>
     <!-- En este caso comprobamos que disponemos de la Paint API con el cndicional,
+    </div>
     esto nos permitiría poder predentar una alternativa y no cargar el módulo si no 
     es soportado -->
     <script>
