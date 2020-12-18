@@ -6,7 +6,7 @@ body {
 }
 
 .placeholder {
-  --line-with: 2;
+  --line-width: 2;
   --stroke-color: #4286f4;
   background-image: paint(boxPainter);
   background-color: #fff;
