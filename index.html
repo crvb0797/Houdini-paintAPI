@@ -13,23 +13,34 @@
       <main>
         <h1>Mockup Asombroso</h1>
         <p>
-          This uses placeholder boxes created with the CSS Paint API. Neat! You
-          can resize them by dragging their bottom right corners.
+          Esto utiliza cuadros de marcador de posición creados con CSS Paint
+          API. ¡Ordenado! Puede cambiar su tamaño arrastrando sus esquinas
+          inferiores derechas.
         </p>
         <div class="row">
           <div class="placeholder"></div>
           <div class="placeholder"></div>
           <div class="placeholder"></div>
         </div>
-        <p>Tha´s all. Tanks!</p>
+        <p>Eso es todo, Gracias!</p>
       </main>
       <aside>
         <div class="placeholder"></div>
       </aside>
     </div>
-    <footer>
-      <div class="placeholder"></div>
-    </footer>
+    <div class="container-properties">
+      <label for="input">Color: </label>
+      <input type="text" value="#4286f4" class="input color" />
+      <label for="input">Ancho de la linea: </label>
+      <input type="text" value="2" class="input lineWidth" />
+      <input
+        type="button"
+        id="boton1"
+        name="boton1"
+        class="btn btn-primary"
+        value="Cambio"
+      />
+    </div>
     <!-- En este caso comprobamos que disponemos de la Paint API con el cndicional,
     esto nos permitiría poder predentar una alternativa y no cargar el módulo si no 
     es soportado -->
@@ -38,5 +49,6 @@
         CSS.paintWorklet.addModule("boxPainter.js");
       }
     </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

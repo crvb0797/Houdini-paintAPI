@@ -1,10 +1,11 @@
 class BoxPainter {
   static get inputProperties() {
-    return ["--line-with", "--stroke-color"];
+    return ["--line-width", "--stroke-color"];
   }
   paint(ctx, size, props) {
+    //, props
     /* console.log("Hola paint api"); */
-    ctx.lineWidth = props.get("--line-with");
+    ctx.lineWidth = props.get("--line-width");
     ctx.strokeStyle = props.get("--stroke-color");
 
     /* Dibuja una linea desde arriba a la izquierda, hasta abajo a la derecha */
@@ -20,5 +21,4 @@ class BoxPainter {
     ctx.stroke();
   }
 }
-
 registerPaint("boxPainter", BoxPainter);
